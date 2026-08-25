@@ -1,0 +1,256 @@
+/*
+COLORS:
+background: #120F20
+primary: #D9BB78
+secondary: #201830
+accent: #D89CB8
+forground: #F0E4D2
+border: #4D3D58
+destructive: #C26373
+*/
+
+body {
+  background-color: #120F20 ;
+  color: #EEE7D9;
+  margin: 0;
+}
+
+body, h1 {
+  font-family: 'Cormorant Garamond';
+}
+
+h2 {
+  font-family: 'Marcellus', serif;
+}
+
+p {
+  font-family: 'Source Serif 4', serif;
+}
+
+.caption {
+  text-transform: uppercase;
+  font-family: 'Source Serif 4', serif;
+  font-size: 12px;
+  color: #9F8BAE;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.font-xxl {
+  font-size: 100px;
+  
+}
+
+.font-gold {
+  color:#D9BB78;
+}
+
+.accordion {
+  border-radius: 10px;
+  border: 1px solid #454963;
+  padding: 20px;
+}
+
+.moon-details {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.moon-details > div {
+  border: 1px solid #D9BB78;
+  border-radius: 40px;
+  padding: 0 20px;
+  background-color: #D9BB7855;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #120F20;
+  align-items:center;
+  border-bottom: 1px solid #454963;
+  padding: 10px 20px 10px 0;
+}
+
+.navbar-container img {
+  width: 200px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #D9BB78;
+}
+
+a:active {
+  color: #F0D997;
+}
+
+.button-default {
+  padding: 10px 20px;
+  background-color: #D9BB78;
+  color: #2B273A;
+  border-radius: 20px;
+  border: 1px solid #454963;
+}
+
+.button-default:hover {
+  background-color: #F0D997;
+}
+
+.homepage-container {
+  display: flex;
+  background-color: #2A213966;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 20px 40px 20px;
+  border-bottom: 1px solid #454963;
+  background-image: url("./assets/background.png");
+}
+
+.hompage-left-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.homepage-right-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage-right-content > img {
+  width: 35vw;
+}
+
+.explore-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: #120F2055;
+}
+
+.explore-section-header h1 {
+  font-size: 44px;
+  font-weight: 10;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.cards-basic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card-basic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #9F8BAE;
+  padding: 20px;
+  transition: transform 200ms ease, opacity 200ms ease; 
+  width: 200px;
+  height: 250px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 10px;
+  border: 1px solid #9F8BAE;
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  transition: transform 200ms ease, opacity 200ms ease; 
+  background-size: contain;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-content{
+  z-index: 2;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.card-caption{
+  font-size: 12px;
+  font-style: italic;
+  color: #D9BB78;
+}
+
+.card-title {
+  font-weight: 10;
+}
+
+.card-desc {
+  color: #A69BB1;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.card > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit:cover ;
+  z-index: -1;
+} 
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+      transparent 35%,
+      rgba(23, 18, 29, 0.15) 48%,
+      rgba(23, 18, 29, 0.75) 62%,
+      #17121d 74%
+  );
+  z-index: 1;
+}
