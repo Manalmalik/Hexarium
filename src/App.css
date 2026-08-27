@@ -129,6 +129,7 @@ a:active {
 
 .button-default:hover {
   background-color: #F0D997;
+  cursor: pointer;
 }
 
 .button-primary {
@@ -141,6 +142,21 @@ a:active {
 
 .button-primary:hover {
   background-color: #F0D99799;
+  cursor: pointer;
+}
+
+.button-destructive {
+  padding: 8px 20px;
+  background-color: #d8a4bc;
+  color: #120F20;
+  border-radius: 20px;
+  border: 1px solid #120F20;
+
+}
+
+.button-destructive:hover {
+  background-color: #efbfd5;
+  cursor: pointer;
 }
 
 .homepage-container {
@@ -211,6 +227,11 @@ a:active {
   transition: transform 200ms ease, opacity 200ms ease;
   width: 200px;
   height: 250px;
+}
+
+.card-basic:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .card {
@@ -459,4 +480,92 @@ option:checked {
 .button-secondary>svg {
   font-size: 8px;
   margin: 8px;
+}
+
+.details-container {
+  display:flex;
+  gap: 10px;
+  padding: 40px;
+  width: min(80%, calc(100% - 80px));
+}
+
+.details-content-left{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+}
+/* .details-content-right {
+  flex: 0 0 250px;
+} */
+
+.details-content-left h1{
+  margin-bottom: 0;
+}
+
+.details-container img {
+  width: 250px;
+  border-radius:20px;
+  border: 1px solid #D9BB78;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.details-caption {
+  font-size: 16px;
+  color: #EEE7D999;
+  font-weight: 100;
+}
+
+.details-title {
+  font-size: 20px;
+  padding-top: 0;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  font-weight: 100;
+  font-size: 14px;
+  background-color: #2A2139;
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid #D9BB78;
+  gap: 10px;
+  align-items: center;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: #00000099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.alert-container {
+  display: flex;
+  width: 400px;
+  background-color: #454963;
+  border-radius: 10px;
+  padding: 0px 20px;
+  border: 1px solid #D9BB78;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.alert-container svg {
+  font-size: 10px;
 }
