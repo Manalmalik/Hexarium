@@ -31,7 +31,7 @@ function WitchesListPage() {
   console.log(allWitches, "all ")
   
   return (
-    <div className="container">
+    <div className="list-container">
       <div>
         <h1> Witches, Wizards and Impossible Guests</h1>
         <p className="font-italic font-gold"> Enter at your own risk </p>

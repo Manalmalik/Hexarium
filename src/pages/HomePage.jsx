@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 import axios from 'axios'
+import moonImage from "../assets/darkmoon.png"
+import bgImage from "../assets/background.png"
 
 function HomePage() {
 
@@ -28,7 +30,7 @@ function HomePage() {
 
   return (
     <div className="container">
-      <div className="homepage-container">
+      <div className="homepage-container" style={{backgroundImage: `url(${bgImage})`}}>
         <div className="hompage-left-content">
           <h1>
             <span className="font-xxl"> Enter by </span>
@@ -43,7 +45,7 @@ function HomePage() {
           </p>
         </div>
         <div className="homepage-right-content">
-          <img src="src/assets/darkmoon.png" style={{opacity: moonData?.moon_illumination}}/>
+          <img src={moonImage} style={{opacity: moonData?.moon_illumination}}/>
           <div className="accordion">
             <h2> current celestial note </h2>
             <div className="moon-details">

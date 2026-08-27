@@ -53,6 +53,12 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 40px;
 }
 
@@ -145,7 +151,6 @@ a:active {
   gap: 30px;
   padding: 20px 20px 40px 20px;
   border-bottom: 1px solid #454963;
-  background-image: url("./assets/background.png");
 }
 
 .hompage-left-content {
