@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom"
-
+import logo from "../assets/logo.png"
 function Navbar() {
     const navigate = useNavigate()
 
@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div className="navbar-container">
       <div>
-        <img src="src/assets/logo.png" onClick={handleImageClick}/>
+        <img src={logo} onClick={handleImageClick}/>
       </div>
       <div className="nav-links">
         <NavLink to="/witches"> Witches </NavLink>

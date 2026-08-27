@@ -12,7 +12,7 @@ function WitchDetailsPage() {
 
   const fetchWitchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/witches/${id}`);
+      const response = await axios.get(`${import.meta.env.VITE_HEXARIUM_API}/witches/${id}`);
       setwitch(response.data);
     } catch (e) {
       console.log(e);

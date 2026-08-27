@@ -86,7 +86,7 @@ function AddWitchForm() {
   const createWitchRecord = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/witches",
+       `${import.meta.env.VITE_HEXARIUM_API}/witches`,
         newWitch,
       );
       console.log(response.data);
@@ -97,7 +97,7 @@ function AddWitchForm() {
 
   const fetchSpellsData = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/spells");
+      const response = await axios.get(`${import.meta.env.VITE_HEXARIUM_API}/spells`);
       console.log(response.data);
       setSpells(response.data);
     } catch (e) {

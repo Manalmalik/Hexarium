@@ -15,7 +15,7 @@ function WitchesListPage() {
   
   const fetchWitchesData = async() => {
     try {
-      const response = await axios.get("http://localhost:3000/witches")
+      const response = await axios.get(`${import.meta.env.VITE_HEXARIUM_API}/witches`)
       setAllWitches(response.data)
       console.log(response.data[0])
       setIsLoading(false)
