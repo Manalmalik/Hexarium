@@ -27,6 +27,10 @@ function HomePage() {
     }
 }
 
+const getMoonIllum = () => {
+  return moonData?.moon_illumination >= 98 ? 99 : moonData?.moon_illumination
+}
+
 
   return (
     <div className="container">
@@ -49,11 +53,11 @@ function HomePage() {
           <div className="accordion">
             <h2> current celestial note </h2>
             <div className="moon-details">
-                <div>
+                <div className="moon-details-label">
                     <p className="font-gold font-italic"> Lunar Phase: </p>
                     <p> {moonData?.moon_phase} </p>
                 </div>
-                <div style={{backgroundColor: `#D9BB78${moonData?.moon_illumination}`}}>
+                <div style={{backgroundColor: `#D9BB78${getMoonIllum()}`}}>
                     <p className="font-gold font-italic"> Illimunation: </p>
                     <p> {moonData?.moon_illumination}% </p>
                 </div>

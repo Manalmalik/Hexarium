@@ -107,9 +107,12 @@ audio {
   border: 1px solid #D9BB78;
   border-radius: 40px;
   padding: 0 20px;
-  background-color: #D9BB7855;
   display: flex;
   gap: 10px;
+}
+
+.moon-details-label {
+  background-color: #D9BB7855;
 }
 
 .navbar-container {
