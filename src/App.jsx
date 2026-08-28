@@ -7,12 +7,17 @@ import WitchDetailsPage from './pages/WitchDetailsPage'
 import AddWitchPage from './pages/AddWitchPage'
 import EditWitchPage from './pages/EditWitchPage'
 import Navbar from './components/Navbar'
+import bgMusic from './assets/bgMusic.m4a'
 
 function App() {
 
   return (
     <div className='main-container'>
       <Navbar/>
+      <audio controls loop>
+        <source src={bgMusic} type="audio/mpeg" />
+        Your browser does not support audio.
+      </audio>
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/witches" element={<WitchesListPage />} />

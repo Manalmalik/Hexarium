@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 import axios from 'axios'
-import moonImage from "../assets/darkmoon.png"
+import moonImage from "../assets/fullmoon.png"
 import bgImage from "../assets/background.png"
 
 function HomePage() {
