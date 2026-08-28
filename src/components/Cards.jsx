@@ -3,8 +3,16 @@ import { useNavigate } from "react-router-dom";
 
 export default function Cards() {
     const navigate = useNavigate()
-    const handleCardClick = () => {
+    const handleWitchesCardClick = () => {
         navigate(`/${witchesContent.title}`)
+    }
+
+    const handleSpellsCardClick = () => {
+        navigate(`/${spellsContent.title}`)
+    }
+
+    const handleElixirsCardClick = () => {
+        navigate(`/${elixirsContent.title}`)
     }
 
     const witchesContent = {
@@ -27,9 +35,9 @@ export default function Cards() {
 
   return (
     <div className="cards-basic">
-        <Card caption={witchesContent.caption} title={witchesContent.title} description={witchesContent.description} handleCardClick={handleCardClick}/>
-        <Card caption={spellsContent.caption} title={spellsContent.title} description={spellsContent.description} handleCardClick={handleCardClick}/>
-        <Card caption={elixirsContent.caption} title={elixirsContent.title} description={elixirsContent.description} handleCardClick={handleCardClick}/>
+        <Card caption={witchesContent.caption} title={witchesContent.title} description={witchesContent.description} handleCardClick={handleWitchesCardClick}/>
+        <Card caption={spellsContent.caption} title={spellsContent.title} description={spellsContent.description} handleCardClick={handleSpellsCardClick}/>
+        <Card caption={elixirsContent.caption} title={elixirsContent.title} description={elixirsContent.description} handleCardClick={handleElixirsCardClick}/>
     </div>
   )
 }

@@ -8,6 +8,8 @@ import AddWitchPage from './pages/AddWitchPage'
 import EditWitchPage from './pages/EditWitchPage'
 import Navbar from './components/Navbar'
 import bgMusic from './assets/bgMusic.m4a'
+import SpellDetailsPage from './pages/SpellDetailsPage'
+import ElixirsDetailsPage from './pages/ElixirsDetailsPage'
 
 function App() {
 
@@ -25,7 +27,8 @@ function App() {
         <Route path="/witches/:id" element={<WitchDetailsPage />} />
         <Route path="/witches/create" element={<AddWitchPage />} />
         <Route path="/witches/edit/:id" element={<EditWitchPage />} />
-
+        <Route path="/spells/:id" element={<SpellDetailsPage />} />
+        <Route path="/elixirs" element={<ElixirsDetailsPage />} />
       </Routes>
     </div>
   )

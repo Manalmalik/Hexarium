@@ -1,4 +1,6 @@
 import witchImage from "../assets/bloowitch.png"
+import spellImage from "../assets/spell.png"
+
 function Card({ caption, title, description, variant, handleCardClick, id}) {
 
     const cardVariant = variant ? variant : "basic"
@@ -16,7 +18,7 @@ function Card({ caption, title, description, variant, handleCardClick, id}) {
     </div>
     :
     <div className="card" onClick={() => handleCardClick(id)}>
-        <img src={witchImage}/>
+        <img src={variant === "witch" ? witchImage : spellImage}/>
         <div className="card-overlay"></div>
         <div className="card-content">
             <p className="card-caption"> {caption}</p>

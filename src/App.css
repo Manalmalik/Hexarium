@@ -222,7 +222,7 @@ a:active {
 
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
   margin-top: 40px;
@@ -531,6 +531,12 @@ option:checked {
   width: 250px;
   border-radius:20px;
   border: 1px solid #D9BB78;
+}
+
+.details-content-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 
 .action-buttons {
